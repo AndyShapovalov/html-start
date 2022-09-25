@@ -5,66 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td><img src="https://img1.akspic.ru/previews/9/9/1/9/6/169199/169199-smartfon-Vozdushnyy_sharik-sinij-chelovek-zhest-500x.jpg"  width="200" height="200" alt="sorry"></td>
-            <td><h1>Andy Shapovalov</h1>
-                <p><em>Я изучаю html, css</em></p>
-                <p><strong>я изучаю таргет</strong></p></td>
-        </tr>
-    </table>
-    <hr>
-    <h2>Мои соц.сети</h2>
-    <ul>
-        <li><a target="_blank" href="vk.com"> vk</a></li>
-        <li><a target="_blank" href="insta.com"> insta</a></li>
-        <li><a target="_blank" href="facebook.com"> facebook</a></li>
-    </ul>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>games</li>
-        <li>car</li>
-    </ol>
-    <hr>
-    <h2>опыт работы</h2>
-    <table border="2">
-        <tr>
-            <th>компания</th>
-            <th>должность</th>
-            <th>год работы</th>
-        </tr>
-        <tr>
-            <td>рено</td>
-            <td>менеджер</td>
-            <td>2011</td>
-        </tr>
-        <tr>
-            <td>раз два</td>
-            <td>курьер</td>
-            <td>2012</td>
-        </tr>
-        <tr></tr>
-    </table>
-    <hr>
-    <h2>youtube </h2>
-    <a target="_blank" href="youtube.html">посмотреть список</a>
-    <hr>
-    <h2>связаться со мной</h2>
-    <form accesskey="\">
-        <label for="name">ваше имя</label>
-        <input type="text" id="name" placeholder="введите имя">
-        <br>
-        <label for="email">ваш емеил</label>
-        <input type="text" id="email" placeholder="введите емеил">
-        <br>
-        <label for="area">ваше сообщение</label>
-        <br>
-        <textarea id="area" placeholder="введите сообщение" rows="5" cols="30"></textarea>
-        <br>
-        <input type="submit">
-    </form>
+    <div class="countainer">
+        <div class="info">
+            <img src="https://img1.akspic.ru/previews/9/9/1/9/6/169199/169199-smartfon-Vozdushnyy_sharik-sinij-chelovek-zhest-500x.jpg" alt="sorry" class="avatar">
+            <div class="info-text">
+                <h1>Andy Shapovalov</h1>
+                <p>Я изучаю html, css</p>
+                <p><strong>я изучаю таргет</strong></p>
+                <h4>Мои соц.сети</h4>
+                <a target="_blank" href="vk.com"> vk</a>|
+                <a target="_blank" href="insta.com"> insta</a>|
+                <a target="_blank" href="facebook.com"> facebook</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>games</li>
+                <li>car</li>
+            </ol>
+        </div>
+        <div class="card bg-green">
+            <h2>опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>палома</td>
+                    <td>продавец</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>рено</td>
+                    <td>менеджер</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>раз два</td>
+                    <td>курьер</td>
+                    <td>2012</td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div>
+        <div class="card bg-red">
+            <h2>youtube </h2>
+            <ul class="link-list">
+                <li><a href="youtube">новый курс</a></li>
+                <li><a href="youtube">еще один курс</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="contact">
+                <h2>связаться со мной</h2>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">ваше имя</label>
+                            <input type="text" id="name" placeholder="введите имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ваш емеил</label>
+                            <input type="text" id="email" placeholder="введите емеил">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="area">ваше сообщение</label>
+                            <textarea id="area" placeholder="введите сообщение" rows="5" cols="30"></textarea>
+                        </div>
+                        <input class="btn" type="submit" value="связаться">
+                </form>
+            </div>
+            <div class="position">
+                <div class="box">
+                    
+                </div>
+            </div>
+        </div>
+    <div style="margin-bottom:500px"></div>
 </body>
 </html>
